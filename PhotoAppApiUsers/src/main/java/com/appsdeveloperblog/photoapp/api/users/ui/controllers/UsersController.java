@@ -1,5 +1,7 @@
 package com.appsdeveloperblog.photoapp.api.users.ui.controllers;
 
+import javax.validation.Valid;
+
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -18,7 +20,7 @@ public class UsersController {
 	}
 	
 	@PostMapping
-	public String createUser(@RequestBody CreateUserRequestModel userDetails) {
+	public String createUser(@Valid @RequestBody CreateUserRequestModel userDetails) {
 		return "Create User methos called";
 	}
 
