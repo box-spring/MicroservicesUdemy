@@ -9,7 +9,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="users")
+@Table(name="USERS")
 public class UserEntity implements Serializable {
 
 	private static final long serialVersionUID = -2731425678149216053L;
